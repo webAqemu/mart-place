@@ -19,11 +19,53 @@
 		line-height: 28px;
 		font-size: 15px;
 		font-weight: 400;
-		padding: 6px 15px;
+		padding: 6px 17px;
 		border-radius: 20px;
-		margin: 0 40px 0 auto;
+		margin: 0 35px 0 auto;
+	}
+	&__notifications {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-right: 50px;
 	}
 }
+
+.notifications__icon {
+	position: relative;
+	margin-left: 30px;
+}
+
+.notifications__icon::after {
+	position: absolute;
+	content: '25';
+	top: -17px;
+	left: 10px;
+	font-size: 14px;
+	color: #fff;
+	padding: 2px 4px;
+	background-color: #ff6a6c;
+	border-radius: 14px;
+	min-width: 22px;
+	min-height: 22px;
+	text-align: center;
+}
+
+.notifications__mails {
+	margin-bottom: 3px;
+}
+
+.notifications__mails::after {
+	content: '666';
+	top: -14px;
+	background-color: #62d03b;
+}
+
+.notifications__shopping-cart::after {
+	content: '245';
+	background-color: $light-blue;
+}
+
 
 .header__profile {
 	display: flex;
@@ -93,7 +135,8 @@
 	}
 }
 
+
+
 .lnr-magnifier {
-	font-size: 15px;
 	color: #fff;
 }
