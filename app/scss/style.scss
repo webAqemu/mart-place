@@ -18,7 +18,6 @@
 		background-color: $light-blue;
 		line-height: 28px;
 		font-size: 15px;
-		font-weight: 400;
 		padding: 6px 17px;
 		border-radius: 20px;
 		margin: 0 35px 0 auto;
@@ -135,8 +134,41 @@
 	}
 }
 
-
-
 .lnr-magnifier {
 	color: #fff;
 }
+
+.main-screen {
+	background-color: #294cce;
+	padding: 180px 0;
+	color: #fff;
+	text-align: center;
+	&__title {
+	font-size: 60px;
+	line-height: 70px;
+	font-family: 'Quicksand-Bold', sans-serif;
+	&-thin {
+		font-family: 'Quicksand-Regular', sans-serif;
+	}
+	}
+
+	&__text {
+		font-family: 'Quicksand-Medium', sans-serif;
+		margin: 50px 0;
+		font-size: 20px;
+	}
+	&__link {
+		display: inline-block;
+		margin: 14px;
+		font-size: 16px;
+		border: 1px solid #fff;
+		border-radius: 35px;
+		padding: 20px 30px;
+		&:hover,
+		&-active {
+			background-color: #fff;
+			color: #294cce;
+		}
+	}
+}
+
