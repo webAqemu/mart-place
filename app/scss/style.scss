@@ -319,6 +319,9 @@
 .products-slider {
 	background-color: #eff1f5;
 	padding: 115px 0;
+	&__inner {
+		position: relative;
+	}
 	&__title {
 		display: flex;
 		align-items: center;
@@ -433,16 +436,16 @@
 	top: 1px;
 }
 
-.lnr-cart {
+ .cart-slider.lnr-cart {
 	position: relative;
 	color: $light-blue;
 	font-size: 15px;
 }
-.lnr-cart:before {
+.cart-slider.lnr-cart:before {
 	position: absolute;
 	left: 1px;
 	top: 0;
-}
+} 
 
 .author__name {
 	padding: 0 10px;
@@ -451,4 +454,34 @@
 .author__type {
 	color: #7347c1;
 	padding-left: 40px;
+}
+
+.slick-arrow {
+	outline: none;
+	border: none;
+	background-color: #7347c1;
+	height: 45px;
+	width: 55px;
+	font-size: 0;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	cursor: pointer;
+}
+
+.slick-prev {
+	right: 85px;
+	top: -130px;
+	border-top-left-radius: 23px;
+	border-bottom-left-radius: 23px;
+	background-image: url(../images/lnr-chevron-left.svg);
+	
+}
+
+.slick-next {
+	right: 30px;
+	top: -130px;
+	border-top-right-radius: 23px;
+	border-bottom-right-radius: 23px;
+	background-image: url(../images/lnr-chevron-right.svg);
 }
