@@ -506,6 +506,25 @@
 .products {
 	background-color: #f6f7fb;
 	padding: 120px 0;
+	&__title {
+		display: flex;
+		justify-content: space-between;
+		&.title {
+			margin-bottom: 30px;
+		}
+	}
+	&__filter {
+		font-size: 16px;
+		color: #747b86;
+		max-width: 91px;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+		padding: 30px 0;
+		transition: all .5s;
+		cursor: pointer;
+	}
 	&__box {
 		display: flex;
 		justify-content: space-between;
@@ -522,6 +541,48 @@
 		display: flex;
 		align-items: center;
 	}
+}
+
+.filter__link {
+	width: 5px;
+	height: 20px;
+	background-repeat: no-repeat;
+	padding: 0 5px;
+}
+
+.filter__list {
+	position: absolute;
+	width: 150px;
+	height: 170px;
+	background-color: #fff;
+	padding: 20px;
+	box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+	border-radius: 4px;
+	top: 67px;
+	right: -18px;
+	display: none;
+}
+
+.filter__item {
+	outline: none;
+	border: none;
+	background-color: #fff;
+	color: #747b86;
+	cursor: pointer;
+	display: block;
+}
+
+.products__filter:hover .filter__list {
+	display: block;
+
+}
+
+.filter__item:hover {
+	color: $light-blue;
+}
+
+.filter__item + .filter__item{
+	margin-top: 10px;
 }
 
 
