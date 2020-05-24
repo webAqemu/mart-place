@@ -7,7 +7,7 @@ $(function () {
 
 	$(".description__stars").rateYo({
 		rating: 4.5,
-		starWidth: "17px",
+		starWidth: "15px",
 		readOnly: true,
 	});
 
@@ -15,5 +15,8 @@ $(function () {
 		slidesToShow: 1,
 		slidesToScroll: 1,
 	});
+
+	var mixer = mixitup('.products__box');
+
 
 });
