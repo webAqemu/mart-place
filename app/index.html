@@ -17,7 +17,7 @@
 				<div class="header__top">
 					<div class="container">
 						<div class="header__top-inner">
-							<img class="header__logo" src="images/logo.png">
+							<div class="header__logo-link"> <img class="header__logo" src="images/logo.png"></div>
 							<a href="#" class="header__btn">Become a Seller</a>
 							<div class="header__notifications">
 								<div class="header__icon header__icon--rings">
@@ -155,254 +155,264 @@
 
 								</div>
 							</div>
-							<div class="header__cart">
-								<div class="header__icon header__icon--shopping-cart ">
-									<a class="header__icon-link" href="#">
-										<span class="lnr lnr-cart"></span>
-										<span class="header__number header__number--shoping-cart"> 13</span>
+							<div class="header__box--top">
+								<div class="header__cart">
+									<div class="header__icon header__icon--shopping-cart ">
+										<a class="header__icon-link" href="#">
+											<span class="lnr lnr-cart"></span>
+											<span class="header__number header__number--shoping-cart"> 13</span>
+										</a>
+
+										<div class="header__dropdown header__dropdown--cart">
+											<div class="cart__triangle"></div>
+											<div class="cart__item">
+												<img src="images/content/cart-img.jpg" alt="project photo" class="cart__img">
+												<div class="cart__info">
+													<a href="#" class="cart__name">Finance and Consulting </a>
+													<a href="#" class="cart__theme">Business Theme</a>
+													<div class="cart__type">Wordpress</div>
+												</div>
+												<div class="cart__right">
+													<button class="cart__icon"></button>
+													<div class="cart__price">$60</div>
+												</div>
+											</div>
+
+											<div class="cart__item">
+												<img src="images/content/cart-img.jpg" alt="project photo" class="cart__img">
+												<div class="cart__info">
+													<a href="#" class="cart__name">Finance and Consulting </a>
+													<a href="#" class="cart__theme">Business Theme</a>
+													<div class="cart__type">Wordpress</div>
+												</div>
+												<div class="cart__right">
+													<button class="cart__icon"></button>
+													<div class="cart__price">$60</div>
+												</div>
+											</div>
+
+											<div class="cart__total">Total: <span class="cart__number">$80</span></div>
+
+											<div class="cart__links">
+												<a href="#" class="cart__link cart__link--cart">Go to Cart</a>
+												<a href="#" class="cart__link cart__link--checkout">Go to Checkout</a>
+											</div>
+										</div>
+
+									</div>
+								</div>
+								<div class="header__profile">
+									<a href="#" class="header__link-img">
+										<img class="header__img" src="images/content/user.jpg" alt="avatar">
 									</a>
-
-									<div class="header__dropdown header__dropdown--cart">
-										<div class="cart__triangle"></div>
-										<div class="cart__item">
-											<img src="images/content/cart-img.jpg" alt="project photo" class="cart__img">
-											<div class="cart__info">
-												<a href="#" class="cart__name">Finance and Consulting </a>
-												<a href="#" class="cart__theme">Business Theme</a>
-												<div class="cart__type">Wordpress</div>
-											</div>
-											<div class="cart__right">
-												<button class="cart__icon"></button>
-												<div class="cart__price">$60</div>
-											</div>
+									<div class="header__info">
+										<div class="header__name">
+											<a class="header__name-link" href="#">Taofiq Hakim</a>
 										</div>
-
-										<div class="cart__item">
-											<img src="images/content/cart-img.jpg" alt="project photo" class="cart__img">
-											<div class="cart__info">
-												<a href="#" class="cart__name">Finance and Consulting </a>
-												<a href="#" class="cart__theme">Business Theme</a>
-												<div class="cart__type">Wordpress</div>
-											</div>
-											<div class="cart__right">
-												<button class="cart__icon"></button>
-												<div class="cart__price">$60</div>
-											</div>
-										</div>
-
-										<div class="cart__total">Total: <span class="cart__number">$80</span></div>
-
-										<div class="cart__links">
-											<a href="#" class="cart__link cart__link--cart">Go to Cart</a>
-											<a href="#" class="cart__link cart__link--checkout">Go to Checkout</a>
+										<div class="header__wallet">
+											$20.45
 										</div>
 									</div>
-
+									<div class="header__dropdown header__dropdown--profile">
+										<div class="profile__triangle"></div>
+										<ul class="profile__list">
+											<li class="profile__item profile__item--profile">
+												<a href="#" class="profile__link">Profile Page</a>
+											</li>
+											<li class="profile__item profile__item--dashboard">
+												<a href="#" class="profile__link">Dashboard</a>
+											</li>
+											<li class="profile__item profile__item--settings">
+												<a href="#" class="profile__link">Account Settings</a>
+											</li>
+											<li class="profile__item profile__item--purchases">
+												<a href="#" class="profile__link">Your Purchases</a>
+											</li>
+											<li class="profile__item profile__item--favorites">
+												<a href="#" class="profile__link">Your Favorites</a>
+											</li>
+											<li class="profile__item profile__item--credits">
+												<a href="#" class="profile__link">Add Credits</a>
+											</li>
+											<li class="profile__item profile__item--sales">
+												<a href="#" class="profile__link">Sales Statements</a>
+											</li>
+											<li class="profile__item profile__item--upload">
+												<a href="#" class="profile__link">Upload Item</a>
+											</li>
+											<li class="profile__item profile__item--edit">
+												<a href="#" class="profile__link">Edit Item</a>
+											</li>
+											<li class="profile__item profile__item--withdrawals">
+												<a href="#" class="profile__link">Withdrawals</a>
+											</li>
+											<li class="profile__item profile__item--logout">
+												<a href="#" class="profile__link">Logout</a>
+											</li>
+										</ul>
+									</div>
 								</div>
 							</div>
-							<div class="header__profile">
-								<a href="#" class="header__link-img">
-									<img class="header__img" src="images/content/user.jpg" alt="avatar">
-								</a>
-								<div class="header__info">
-									<div class="header__name">
-										<a class="header__name-link" href="#">Taofiq Hakim</a>
-									</div>
-									<div class="header__wallet">
-										$20.45
-									</div>
-								</div>
-								<div class="header__dropdown header__dropdown--profile">
-									<div class="profile__triangle"></div>
-									<ul class="profile__list">
-										<li class="profile__item profile__item--profile">
-											<a href="#" class="profile__link">Profile Page</a>
-										</li>
-										<li class="profile__item profile__item--dashboard">
-											<a href="#" class="profile__link">Dashboard</a>
-										</li>
-										<li class="profile__item profile__item--settings">
-											<a href="#" class="profile__link">Account Settings</a>
-										</li>
-										<li class="profile__item profile__item--purchases">
-											<a href="#" class="profile__link">Your Purchases</a>
-										</li>
-										<li class="profile__item profile__item--favorites">
-											<a href="#" class="profile__link">Your Favorites</a>
-										</li>
-										<li class="profile__item profile__item--credits">
-											<a href="#" class="profile__link">Add Credits</a>
-										</li>
-										<li class="profile__item profile__item--sales">
-											<a href="#" class="profile__link">Sales Statements</a>
-										</li>
-										<li class="profile__item profile__item--upload">
-											<a href="#" class="profile__link">Upload Item</a>
-										</li>
-										<li class="profile__item profile__item--edit">
-											<a href="#" class="profile__link">Edit Item</a>
-										</li>
-										<li class="profile__item profile__item--withdrawals">
-											<a href="#" class="profile__link">Withdrawals</a>
-										</li>
-										<li class="profile__item profile__item--logout">
-											<a href="#" class="profile__link">Logout</a>
-										</li>
-									</ul>
-								</div>
-							</div>
+							<div class="header__btn--top"></div>
 						</div>
 					</div>
 				</div>
 
 				<div class="header__menu menu">
 					<div class="container">
+						<div class="header__burger">
+							<div class="header__line"></div>
+							<div class="header__line"></div>
+							<div class="header__line"></div>
+						</div>
 						<div class="header__menu-inner">
-							<nav class="header__list">
-								<span class="header__item"><a class="header__link" href="#">home</a>
+							<div class="header__box">
+								<nav class="header__list">
+									<span class="header__item header__home"><button class="header__link">home</button>
 
-									<div class="header__dropdown header__dropdown--menu">
-										<ul class="menu__list">
-											<li class="menu__item"><a href="#" class="menu__link">Home One Multi User</a></li>
-											<li class="menu__item"><a href="#" class="menu__link">Home Two Single User</a></li>
-											<li class="menu__item"><a href="#" class="menu__link">Home Three Product</a></li>
-										</ul>
-									</div>
+										<div class="header__dropdown header__dropdown--menu header__dropdown--home">
+											<ul class="menu__list">
+												<li class="menu__item"><a href="#" class="menu__link">Home One Multi User</a></li>
+												<li class="menu__item"><a href="#" class="menu__link">Home Two Single User</a></li>
+												<li class="menu__item"><a href="#" class="menu__link">Home Three Product</a></li>
+											</ul>
+										</div>
 
-								</span>
-								<span class="header__item"><a class="header__link" href="#">all products</a>
+									</span>
+									<span class="header__item"><button class="header__link">all products</button>
 
-									<div class="header__dropdown header__dropdown--menu">
-										<ul class="menu__list">
-											<li class="menu__item"><a href="#" class="menu__link">Recent Items</a></li>
-											<li class="menu__item"><a href="#" class="menu__link">Popular Items</a></li>
-											<li class="menu__item"><a href="#" class="menu__link">Featured Items</a></li>
-											<li class="menu__item"><a href="#" class="menu__link">Free Templates</a></li>
-											<li class="menu__item"><a href="#" class="menu__link">Follow Feed</a></li>
-											<li class="menu__item"><a href="#" class="menu__link">Top Authors</a></li>
-										</ul>
-									</div>
+										<div class="header__dropdown header__dropdown--menu">
+											<ul class="menu__list">
+												<li class="menu__item"><a href="#" class="menu__link">Recent Items</a></li>
+												<li class="menu__item"><a href="#" class="menu__link">Popular Items</a></li>
+												<li class="menu__item"><a href="#" class="menu__link">Featured Items</a></li>
+												<li class="menu__item"><a href="#" class="menu__link">Free Templates</a></li>
+												<li class="menu__item"><a href="#" class="menu__link">Follow Feed</a></li>
+												<li class="menu__item"><a href="#" class="menu__link">Top Authors</a></li>
+											</ul>
+										</div>
 
-								</span>
-								<span class="header__item"><a class="header__link" href="#">wordpress</a>
+									</span>
+									<span class="header__item"><button class="header__link">wordpress</button>
 
-									<div class="header__dropdown header__dropdown--menu">
-										<ul class="menu__list">
-											<li class="menu__item"><a href="#" class="menu__link">Popular Items</a></li>
-											<li class="menu__item"><a href="#" class="menu__link">Admin Templates</a></li>
-											<li class="menu__item"><a href="#" class="menu__link">Blog / Magazine / News</a></li>
-											<li class="menu__item"><a href="#" class="menu__link">Creative</a></li>
-											<li class="menu__item"><a href="#" class="menu__link">Corporate Business</a></li>
-											<li class="menu__item"><a href="#" class="menu__link">Resume Portfolio</a></li>
-											<li class="menu__item"><a href="#" class="menu__link">eCommerce</a></li>
-											<li class="menu__item"><a href="#" class="menu__link">Entertainment</a></li>
-											<li class="menu__item"><a href="#" class="menu__link">Landing Pages</a></li>
-										</ul>
-									</div>
+										<div class="header__dropdown header__dropdown--menu">
+											<ul class="menu__list">
+												<li class="menu__item"><a href="#" class="menu__link">Popular Items</a></li>
+												<li class="menu__item"><a href="#" class="menu__link">Admin Templates</a></li>
+												<li class="menu__item"><a href="#" class="menu__link">Blog / Magazine / News</a></li>
+												<li class="menu__item"><a href="#" class="menu__link">Creative</a></li>
+												<li class="menu__item"><a href="#" class="menu__link">Corporate Business</a></li>
+												<li class="menu__item"><a href="#" class="menu__link">Resume Portfolio</a></li>
+												<li class="menu__item"><a href="#" class="menu__link">eCommerce</a></li>
+												<li class="menu__item"><a href="#" class="menu__link">Entertainment</a></li>
+												<li class="menu__item"><a href="#" class="menu__link">Landing Pages</a></li>
+											</ul>
+										</div>
 
-								</span>
-								<span class="header__item"><a class="header__link" href="#">festures</a></span>
-								<span class="header__item"><a class="header__link" href="#">pages</a>
+									</span>
+									<span class="header__item"><a class="header__link" href="#">festures</a></span>
+									<span class="header__item"><button class="header__link">pages</button>
 
-									<div class="header__dropdown header__dropdown--pages">
-										<div class="pages__inner">
-											<div class="pages__col pages__col--martplace">
-												<div class="pages__title">MartPlace Pages</div>
-												<div class="pages__items">
+										<div class="header__dropdown header__dropdown--pages">
+											<div class="pages__inner">
+												<div class="pages__col pages__col--martplace">
+													<div class="pages__title">MartPlace Pages</div>
+													<div class="pages__items">
+														<ul class="pages__list">
+															<li class="pages__item"><a href="#" class="pages__link">Home Page One</a></li>
+															<li class="pages__item"><a href="#" class="pages__link">Home Page Two</a></li>
+															<li class="pages__item"><a href="#" class="pages__link">Home Page Three</a></li>
+															<li class="pages__item"><a href="#" class="pages__link">Products Grid</a></li>
+															<li class="pages__item"><a href="#" class="pages__link">Products List</a></li>
+															<li class="pages__item"><a href="#" class="pages__link">Category Grid Sidebar</a></li>
+															<li class="pages__item"><a href="#" class="pages__link">Category List Sidebar</a></li>
+															<li class="pages__item"><a href="#" class="pages__link">Search Product</a></li>
+															<li class="pages__item"><a href="#" class="pages__link">Single Product V-1</a></li>
+															<li class="pages__item"><a href="#" class="pages__link">Single Product V-2</a></li>
+															<li class="pages__item"><a href="#" class="pages__link">Single Product V-3</a></li>
+														</ul>
+														<ul class="pages__list">
+															<li class="pages__item"><a href="#" class="pages__link">Single Items Comments</a></li>
+															<li class="pages__item"><a href="#" class="pages__link">Single Items Reviews</a></li>
+															<li class="pages__item"><a href="#" class="pages__link">Single Items Support</a></li>
+															<li class="pages__item"><a href="#" class="pages__link">Single Items FAQs</a></li>
+															<li class="pages__item"><a href="#" class="pages__link">Favorites Items</a></li>
+															<li class="pages__item"><a href="#" class="pages__link">Author Profile</a></li>
+															<li class="pages__item"><a href="#" class="pages__link">Author Items</a></li>
+															<li class="pages__item"><a href="#" class="pages__link">Customer Reviews</a></li>
+															<li class="pages__item"><a href="#" class="pages__link">Followers</a></li>
+															<li class="pages__item"><a href="#" class="pages__link">Following</a></li>
+															<li class="pages__item"><a href="#" class="pages__link">Product View Variations</a></li>
+														</ul>
+													</div>
+												</div>
+												<div class="pages__col pages__col--dashboard">
+													<div class="pages__title">Dashboard</div>
 													<ul class="pages__list">
-														<li class="pages__item"><a href="#" class="pages__link">Home Page One</a></li>
-														<li class="pages__item"><a href="#" class="pages__link">Home Page Two</a></li>
-														<li class="pages__item"><a href="#" class="pages__link">Home Page Three</a></li>
-														<li class="pages__item"><a href="#" class="pages__link">Products Grid</a></li>
-														<li class="pages__item"><a href="#" class="pages__link">Products List</a></li>
-														<li class="pages__item"><a href="#" class="pages__link">Category Grid Sidebar</a></li>
-														<li class="pages__item"><a href="#" class="pages__link">Category List Sidebar</a></li>
-														<li class="pages__item"><a href="#" class="pages__link">Search Product</a></li>
-														<li class="pages__item"><a href="#" class="pages__link">Single Product V-1</a></li>
-														<li class="pages__item"><a href="#" class="pages__link">Single Product V-2</a></li>
-														<li class="pages__item"><a href="#" class="pages__link">Single Product V-3</a></li>
-													</ul>
-													<ul class="pages__list">
-														<li class="pages__item"><a href="#" class="pages__link">Single Items Comments</a></li>
-														<li class="pages__item"><a href="#" class="pages__link">Single Items Reviews</a></li>
-														<li class="pages__item"><a href="#" class="pages__link">Single Items Support</a></li>
-														<li class="pages__item"><a href="#" class="pages__link">Single Items FAQs</a></li>
-														<li class="pages__item"><a href="#" class="pages__link">Favorites Items</a></li>
-														<li class="pages__item"><a href="#" class="pages__link">Author Profile</a></li>
-														<li class="pages__item"><a href="#" class="pages__link">Author Items</a></li>
-														<li class="pages__item"><a href="#" class="pages__link">Customer Reviews</a></li>
-														<li class="pages__item"><a href="#" class="pages__link">Followers</a></li>
-														<li class="pages__item"><a href="#" class="pages__link">Following</a></li>
-														<li class="pages__item"><a href="#" class="pages__link">Product View Variations</a></li>
+														<li class="pages__item"><a href="#" class="pages__link">Dashboard</a></li>
+														<li class="pages__item"><a href="#" class="pages__link">Account Settings</a></li>
+														<li class="pages__item"><a href="#" class="pages__link">Author Purchases</a></li>
+														<li class="pages__item"><a href="#" class="pages__link">Items Rating</a></li>
+														<li class="pages__item"><a href="#" class="pages__link">Add Credits</a></li>
+														<li class="pages__item"><a href="#" class="pages__link">Statements</a></li>
+														<li class="pages__item"><a href="#" class="pages__link">Invoice</a></li>
+														<li class="pages__item"><a href="#" class="pages__link">Upload Item</a></li>
+														<li class="pages__item"><a href="#" class="pages__link">Edit Items</a></li>
+														<li class="pages__item"><a href="#" class="pages__link">Withdrawals</a></li>
+														<li class="pages__item"><a href="#" class="pages__link">Add Payment Method</a></li>
 													</ul>
 												</div>
-											</div>
-											<div class="pages__col pages__col--dashboard">
-												<div class="pages__title">Dashboard</div>
-												<ul class="pages__list">
-													<li class="pages__item"><a href="#" class="pages__link">Dashboard</a></li>
-													<li class="pages__item"><a href="#" class="pages__link">Account Settings</a></li>
-													<li class="pages__item"><a href="#" class="pages__link">Author Purchases</a></li>
-													<li class="pages__item"><a href="#" class="pages__link">Items Rating</a></li>
-													<li class="pages__item"><a href="#" class="pages__link">Add Credits</a></li>
-													<li class="pages__item"><a href="#" class="pages__link">Statements</a></li>
-													<li class="pages__item"><a href="#" class="pages__link">Invoice</a></li>
-													<li class="pages__item"><a href="#" class="pages__link">Upload Item</a></li>
-													<li class="pages__item"><a href="#" class="pages__link">Edit Items</a></li>
-													<li class="pages__item"><a href="#" class="pages__link">Withdrawals</a></li>
-													<li class="pages__item"><a href="#" class="pages__link">Add Payment Method</a></li>
-												</ul>
-											</div>
-											<div class="pages__col pages__col--other">
-												<div class="pages__title">Other Pages</div>
-												<div class="pages__items">
-													<ul class="pages__list">
-														<li class="pages__item"><a href="#" class="pages__link">Notifications</a></li>
-														<li class="pages__item"><a href="#" class="pages__link">Message Inbox</a></li>
-														<li class="pages__item"><a href="#" class="pages__link">Message Compose</a></li>
-														<li class="pages__item"><a href="#" class="pages__link">Shopping Cart</a></li>
-														<li class="pages__item"><a href="#" class="pages__link">Checkout</a></li>
-														<li class="pages__item"><a href="#" class="pages__link">Login</a></li>
-														<li class="pages__item"><a href="#" class="pages__link">Register</a></li>
-														<li class="pages__item"><a href="#" class="pages__link">Recovery Password</a></li>
-														<li class="pages__item"><a href="#" class="pages__link">Support Forum</a></li>
-														<li class="pages__item"><a href="#" class="pages__link">Forum Details</a></li>
-														<li class="pages__item"><a href="#" class="pages__link">How It Works</a></li>
-													</ul>
-													<ul class="pages__list">
-														<li class="pages__item"><a href="#" class="pages__link">About Us</a></li>
-														<li class="pages__item"><a href="#" class="pages__link">Pricing Plan</a></li>
-														<li class="pages__item"><a href="#" class="pages__link">Testimonials</a></li>
-														<li class="pages__item"><a href="#" class="pages__link">FAQs</a></li>
-														<li class="pages__item"><a href="#" class="pages__link">FAQs Details</a></li>
-														<li class="pages__item"><a href="#" class="pages__link">Affiliates</a></li>
-														<li class="pages__item"><a href="#" class="pages__link">Terms & Conditions</a></li>
-														<li class="pages__item"><a href="#" class="pages__link">Blog V-1</a></li>
-														<li class="pages__item"><a href="#" class="pages__link">Blog V-2</a></li>
-														<li class="pages__item"><a href="#" class="pages__link">Blog Details</a></li>
-														<li class="pages__item"><a href="#" class="pages__link">Contact Us</a></li>
-														<li class="pages__item"><a href="#" class="pages__link">Menu & Footer Variation</a></li>
-													</ul>
+												<div class="pages__col pages__col--other">
+													<div class="pages__title">Other Pages</div>
+													<div class="pages__items">
+														<ul class="pages__list">
+															<li class="pages__item"><a href="#" class="pages__link">Notifications</a></li>
+															<li class="pages__item"><a href="#" class="pages__link">Message Inbox</a></li>
+															<li class="pages__item"><a href="#" class="pages__link">Message Compose</a></li>
+															<li class="pages__item"><a href="#" class="pages__link">Shopping Cart</a></li>
+															<li class="pages__item"><a href="#" class="pages__link">Checkout</a></li>
+															<li class="pages__item"><a href="#" class="pages__link">Login</a></li>
+															<li class="pages__item"><a href="#" class="pages__link">Register</a></li>
+															<li class="pages__item"><a href="#" class="pages__link">Recovery Password</a></li>
+															<li class="pages__item"><a href="#" class="pages__link">Support Forum</a></li>
+															<li class="pages__item"><a href="#" class="pages__link">Forum Details</a></li>
+															<li class="pages__item"><a href="#" class="pages__link">How It Works</a></li>
+														</ul>
+														<ul class="pages__list">
+															<li class="pages__item"><a href="#" class="pages__link">About Us</a></li>
+															<li class="pages__item"><a href="#" class="pages__link">Pricing Plan</a></li>
+															<li class="pages__item"><a href="#" class="pages__link">Testimonials</a></li>
+															<li class="pages__item"><a href="#" class="pages__link">FAQs</a></li>
+															<li class="pages__item"><a href="#" class="pages__link">FAQs Details</a></li>
+															<li class="pages__item"><a href="#" class="pages__link">Affiliates</a></li>
+															<li class="pages__item"><a href="#" class="pages__link">Terms & Conditions</a></li>
+															<li class="pages__item"><a href="#" class="pages__link">Blog V-1</a></li>
+															<li class="pages__item"><a href="#" class="pages__link">Blog V-2</a></li>
+															<li class="pages__item"><a href="#" class="pages__link">Blog Details</a></li>
+															<li class="pages__item"><a href="#" class="pages__link">Contact Us</a></li>
+															<li class="pages__item"><a href="#" class="pages__link">Menu & Footer Variation</a></li>
+														</ul>
+													</div>
 												</div>
 											</div>
 										</div>
-									</div>
 
-								</span>
-							</nav>
-							<div class="header__search">
-								<form class="header__form">
-									<input class="header__input" type="text" placeholder="Search product here..." required>
-									<button class="header__search-btn" type="submit">
-										<span class="header__search-icon lnr lnr-magnifier"></span>
-									</button>
-								</form>
+									</span>
+								</nav>
+								<div class="header__search">
+									<form class="header__form">
+										<input class="header__input" placeholder="Search product here..." required>
+										<button class="header__search-btn lnr lnr-magnifier" type="submit">
+										</button>
+									</form>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 
 			</header>
+
 			<main class="main">
 				<section class="main-screen">
 					<div class="container">
@@ -425,7 +435,7 @@
 							<div class="search__shadow--2"></div>
 							<div class="search__main">
 								<form class="search__form">
-									<input class="search__input" type="text" placeholder="Search your products..." required>
+									<input class="search__input" placeholder="Search your products..." required>
 									<div class="search__box">
 										<select class="search__categories">
 											<option value="selected">All Categories</option>
@@ -464,7 +474,7 @@
 
 							<div class="reasons__item">
 								<img src="images/content/reasons-img-2.png" alt="second-reason" class="reasons__img">
-								<div class="reasons__title">
+								<div class="reasons__title reasons__title--middle">
 									Fully Responsive
 								</div>
 								<div class="reasons__text">
@@ -499,9 +509,7 @@
 
 							<div class="weekly__slide">
 								<div class="weekly__item">
-									<div class="weekly__img">
-										<img class="weekly__image" src="images/content/products-slider-img.jpg" alt="slider image">
-									</div>
+									<img class="weekly__img" src="images/content/products-slider-img.jpg" alt="slider image">
 									<div class="weekly__description">
 										<div class="weekly__item-title">One Page Resume Template</div>
 										<div class="weekly__author">
@@ -526,8 +534,8 @@
 										<div class="weekly__bottom">
 											<div class="weekly__stat">
 												<div class="weekly__price">$10 - $50</div>
-												<div class="weekly__likes">46</div>
-												<div class="weekly__added">634</div>
+												<button class="weekly__likes">46</button>
+												<button class="weekly__added">634</button>
 											</div>
 											<div class="weekly__stars"></div>
 										</div>
@@ -537,8 +545,7 @@
 
 							<div class="weekly__slide">
 								<div class="weekly__item">
-									<div class="weekly__img" style="background-image: url(images/content/products-slider-img.jpg);">
-									</div>
+									<img class="weekly__img" src="images/content/products-slider-img.jpg" alt="slider image">
 									<div class="weekly__description">
 										<div class="weekly__item-title">One Page Resume Template</div>
 										<div class="weekly__author">
@@ -563,14 +570,8 @@
 										<div class="weekly__bottom">
 											<div class="weekly__stat">
 												<div class="weekly__price">$10 - $50</div>
-												<span class="lnr lnr-heart"></span>
-												<div class="weekly__likes">
-													46
-												</div>
-												<span class="lnr lnr-cart cart-slider"></span>
-												<div class="weekly__added">
-													634
-												</div>
+												<button class="weekly__likes">46</button>
+												<button class="weekly__added">634</button>
 											</div>
 											<div class="weekly__stars"></div>
 										</div>
@@ -580,8 +581,7 @@
 
 							<div class="weekly__slide">
 								<div class="weekly__item">
-									<div class="weekly__img" style="background-image: url(images/content/products-slider-img.jpg);">
-									</div>
+									<img class="weekly__img" src="images/content/products-slider-img.jpg" alt="slider image">
 									<div class="weekly__description">
 										<div class="weekly__item-title">One Page Resume Template</div>
 										<div class="weekly__author">
@@ -606,57 +606,8 @@
 										<div class="weekly__bottom">
 											<div class="weekly__stat">
 												<div class="weekly__price">$10 - $50</div>
-												<span class="lnr lnr-heart"></span>
-												<div class="weekly__likes">
-													46
-												</div>
-												<span class="lnr lnr-cart cart-slider"></span>
-												<div class="weekly__added">
-													634
-												</div>
-											</div>
-											<div class="weekly__stars"></div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="weekly__slide">
-								<div class="weekly__item">
-									<div class="weekly__img" style="background-image: url(images/content/products-slider-img.jpg);">
-									</div>
-									<div class="weekly__description">
-										<div class="weekly__item-title">One Page Resume Template</div>
-										<div class="weekly__author">
-											<img src="images/content/user-img.jpg" alt="avatar" class="weekly__author-img">
-											<a href="#" class="weekly__name">AazzTech</a>
-											<a href="#" class="weekly__type" style="background-image: url(images/wordpress-icon.svg);">
-												WordPress
-											</a>
-										</div>
-										<div class="weekly__text">
-											Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
-											justo ut scelerisque the mattis, leo quam
-											aliquet congue placerat mi id nisi interdum mollis.
-											Praesent pharetra, justo ut scelerisque the mattis,
-											leo quam aliquet congue justo ut scelerisque.
-										</div>
-										<div class="weekly__modules">
-											<a href="#" class="weekly__module">website</a>
-											<a href="#" class="weekly__module">plugin</a>
-											<a href="#" class="weekly__module">landing page</a>
-										</div>
-										<div class="weekly__bottom">
-											<div class="weekly__stat">
-												<div class="weekly__price">$10 - $50</div>
-												<span class="lnr lnr-heart"></span>
-												<div class="weekly__likes">
-													46
-												</div>
-												<span class="lnr lnr-cart cart-slider"></span>
-												<div class="weekly__added">
-													634
-												</div>
+												<button class="weekly__likes">46</button>
+												<button class="weekly__added">634</button>
 											</div>
 											<div class="weekly__stars"></div>
 										</div>
@@ -674,7 +625,7 @@
 							Newest Release Products
 							<div class="newest__filter-btn">
 								Filter by:
-								<div class="newest__link" style="background-image: url(images/filter-icon.svg);"></div>
+								<button class="newest__link" style="background-image: url(images/filter-icon.svg);"></button>
 								<div class="newest__list">
 									<div class="newest__triangle"></div>
 									<button class="newest__filter">Trending items</button>
@@ -721,96 +672,9 @@
 									</div>
 									<div class="product__bottom">
 										<div class="product__price"><a href="#" class="product__price-link">$20</a></div>
-										<div class="product__likes">90</div>
+										<button class="product__likes">90</button>
 										<div class="product__stars"></div>
-										<div class="product__carts">246</div>
-									</div>
-								</div>
-
-								<div class="product__item mix category-wordpress">
-									<div class="product__hover" style="background-image: url(images/product-hover-img.jpg);">
-										<a class="product__link" href="#">More Info</a>
-										<a class="product__link" href="#">Live Demo</a>
-									</div>
-									<div class="product__img"><img src="images/content/product-img.jpg" alt="product image"></div>
-									<div class="product__info">
-										<div class="product__title">E-commerce Shopping Cart</div>
-										<div class="product__author">
-											<img class="product__img-author" src="images/content/user.jpg" alt="">
-											<a href="#" class="product__name">Theme-Valley</a>
-											<a href="#" class="product__type" style="background-image: url(images/wordpress-icon.svg);">
-												Plugin
-											</a>
-										</div>
-										<div class="product__text">
-											Nunc placerat mi id nisi interdum mollis.
-											Praesent pharetra, justo ut scelerisque
-											the mattis, leo quam aliquet congue.
-										</div>
-									</div>
-									<div class="product__bottom">
-										<div class="product__price"><a href="#" class="product__price-link">$20</a></div>
-										<div class="product__likes">90</div>
-										<div class="product__stars"></div>
-										<div class="product__carts">246</div>
-									</div>
-								</div>
-
-								<div class="product__item mix category-wordpress">
-									<div class="product__hover" style="background-image: url(images/product-hover-img.jpg);">
-										<a class="product__link" href="#">More Info</a>
-										<a class="product__link" href="#">Live Demo</a>
-									</div>
-									<div class="product__img"><img src="images/content/product-img.jpg" alt="product image"></div>
-									<div class="product__info">
-										<div class="product__title">E-commerce Shopping Cart</div>
-										<div class="product__author">
-											<img class="product__img-author" src="images/content/user.jpg" alt="">
-											<a href="#" class="product__name">Theme-Valley</a>
-											<a href="#" class="product__type" style="background-image: url(images/wordpress-icon.svg);">
-												Plugin
-											</a>
-										</div>
-										<div class="product__text">
-											Nunc placerat mi id nisi interdum mollis.
-											Praesent pharetra, justo ut scelerisque
-											the mattis, leo quam aliquet congue.
-										</div>
-									</div>
-									<div class="product__bottom">
-										<div class="product__price"><a href="#" class="product__price-link">$20</a></div>
-										<div class="product__likes">90</div>
-										<div class="product__stars"></div>
-										<div class="product__carts">246</div>
-									</div>
-								</div>
-
-								<div class="product__item mix category-wordpress">
-									<div class="product__hover" style="background-image: url(images/product-hover-img.jpg);">
-										<a class="product__link" href="#">More Info</a>
-										<a class="product__link" href="#">Live Demo</a>
-									</div>
-									<div class="product__img"><img src="images/content/product-img.jpg" alt="product image"></div>
-									<div class="product__info">
-										<div class="product__title">E-commerce Shopping Cart</div>
-										<div class="product__author">
-											<img class="product__img-author" src="images/content/user.jpg" alt="">
-											<a href="#" class="product__name">Theme-Valley</a>
-											<a href="#" class="product__type" style="background-image: url(images/wordpress-icon.svg);">
-												Plugin
-											</a>
-										</div>
-										<div class="product__text">
-											Nunc placerat mi id nisi interdum mollis.
-											Praesent pharetra, justo ut scelerisque
-											the mattis, leo quam aliquet congue.
-										</div>
-									</div>
-									<div class="product__bottom">
-										<div class="product__price"><a href="#" class="product__price-link">$20</a></div>
-										<div class="product__likes">90</div>
-										<div class="product__stars"></div>
-										<div class="product__carts">246</div>
+										<button class="product__carts">246</button>
 									</div>
 								</div>
 
@@ -837,13 +701,13 @@
 									</div>
 									<div class="product__bottom">
 										<div class="product__price"><a href="#" class="product__price-link">$20</a></div>
-										<div class="product__likes">90</div>
+										<button class="product__likes">90</button>
 										<div class="product__stars"></div>
-										<div class="product__carts">246</div>
+										<button class="product__carts">246</button>
 									</div>
 								</div>
 
-								<div class="product__item mix category-psd">
+								<div class="product__item mix category-plugins">
 									<div class="product__hover" style="background-image: url(images/product-hover-img.jpg);">
 										<a class="product__link" href="#">More Info</a>
 										<a class="product__link" href="#">Live Demo</a>
@@ -866,9 +730,96 @@
 									</div>
 									<div class="product__bottom">
 										<div class="product__price"><a href="#" class="product__price-link">$20</a></div>
-										<div class="product__likes">90</div>
+										<button class="product__likes">90</button>
 										<div class="product__stars"></div>
-										<div class="product__carts">246</div>
+										<button class="product__carts">246</button>
+									</div>
+								</div>
+
+								<div class="product__item mix category-plugins">
+									<div class="product__hover" style="background-image: url(images/product-hover-img.jpg);">
+										<a class="product__link" href="#">More Info</a>
+										<a class="product__link" href="#">Live Demo</a>
+									</div>
+									<div class="product__img"><img src="images/content/product-img.jpg" alt="product image"></div>
+									<div class="product__info">
+										<div class="product__title">E-commerce Shopping Cart</div>
+										<div class="product__author">
+											<img class="product__img-author" src="images/content/user.jpg" alt="">
+											<a href="#" class="product__name">Theme-Valley</a>
+											<a href="#" class="product__type" style="background-image: url(images/wordpress-icon.svg);">
+												Plugin
+											</a>
+										</div>
+										<div class="product__text">
+											Nunc placerat mi id nisi interdum mollis.
+											Praesent pharetra, justo ut scelerisque
+											the mattis, leo quam aliquet congue.
+										</div>
+									</div>
+									<div class="product__bottom">
+										<div class="product__price"><a href="#" class="product__price-link">$20</a></div>
+										<button class="product__likes">90</button>
+										<div class="product__stars"></div>
+										<button class="product__carts">246</button>
+									</div>
+								</div>
+
+								<div class="product__item mix category-plugins">
+									<div class="product__hover" style="background-image: url(images/product-hover-img.jpg);">
+										<a class="product__link" href="#">More Info</a>
+										<a class="product__link" href="#">Live Demo</a>
+									</div>
+									<div class="product__img"><img src="images/content/product-img.jpg" alt="product image"></div>
+									<div class="product__info">
+										<div class="product__title">E-commerce Shopping Cart</div>
+										<div class="product__author">
+											<img class="product__img-author" src="images/content/user.jpg" alt="">
+											<a href="#" class="product__name">Theme-Valley</a>
+											<a href="#" class="product__type" style="background-image: url(images/wordpress-icon.svg);">
+												Plugin
+											</a>
+										</div>
+										<div class="product__text">
+											Nunc placerat mi id nisi interdum mollis.
+											Praesent pharetra, justo ut scelerisque
+											the mattis, leo quam aliquet congue.
+										</div>
+									</div>
+									<div class="product__bottom">
+										<div class="product__price"><a href="#" class="product__price-link">$20</a></div>
+										<button class="product__likes">90</button>
+										<div class="product__stars"></div>
+										<button class="product__carts">246</button>
+									</div>
+								</div>
+
+								<div class="product__item mix category-plugins">
+									<div class="product__hover" style="background-image: url(images/product-hover-img.jpg);">
+										<a class="product__link" href="#">More Info</a>
+										<a class="product__link" href="#">Live Demo</a>
+									</div>
+									<div class="product__img"><img src="images/content/product-img.jpg" alt="product image"></div>
+									<div class="product__info">
+										<div class="product__title">E-commerce Shopping Cart</div>
+										<div class="product__author">
+											<img class="product__img-author" src="images/content/user.jpg" alt="">
+											<a href="#" class="product__name">Theme-Valley</a>
+											<a href="#" class="product__type" style="background-image: url(images/wordpress-icon.svg);">
+												Plugin
+											</a>
+										</div>
+										<div class="product__text">
+											Nunc placerat mi id nisi interdum mollis.
+											Praesent pharetra, justo ut scelerisque
+											the mattis, leo quam aliquet congue.
+										</div>
+									</div>
+									<div class="product__bottom">
+										<div class="product__price"><a href="#" class="product__price-link">$20</a></div>
+										<button class="product__likes">90</button>
+										<div class="product__stars"></div>
+										<button class="product__carts">246</button>
 									</div>
 								</div>
 
@@ -1117,9 +1068,9 @@
 
 						<div class="choose__inner">
 
-							<div class="choose__item choose__item--payment">
+							<div class="choose__item ">
 								<div class="choose__number">01</div>
-								<div class="choose__item-title">
+								<div class="choose__item-title choose__item-title--payment">
 									One Time Payment
 								</div>
 								<div class="choose__item-text">
@@ -1130,9 +1081,9 @@
 								</div>
 							</div>
 
-							<div class="choose__item choose__item--products">
+							<div class="choose__item ">
 								<div class="choose__number">02</div>
-								<div class="choose__item-title">
+								<div class="choose__item-title choose__item-title--products">
 									Quality Products
 								</div>
 								<div class="choose__item-text">
@@ -1143,9 +1094,9 @@
 								</div>
 							</div>
 
-							<div class="choose__item choose__item--secure">
+							<div class="choose__item ">
 								<div class="choose__number">03</div>
-								<div class="choose__item-title">
+								<div class="choose__item-title choose__item-title--secure">
 									100% Secure Payment
 								</div>
 								<div class="choose__item-text">
@@ -1156,9 +1107,9 @@
 								</div>
 							</div>
 
-							<div class="choose__item choose__item--organized">
+							<div class="choose__item ">
 								<div class="choose__number">04</div>
-								<div class="choose__item-title">
+								<div class="choose__item-title choose__item-title--organized">
 									Well Organized Code
 								</div>
 								<div class="choose__item-text">
@@ -1169,9 +1120,9 @@
 								</div>
 							</div>
 
-							<div class="choose__item choose__item--free">
+							<div class="choose__item ">
 								<div class="choose__number">05</div>
-								<div class="choose__item-title">
+								<div class="choose__item-title choose__item-title--free">
 									Life Time Free Update
 								</div>
 								<div class="choose__item-text">
@@ -1182,9 +1133,9 @@
 								</div>
 							</div>
 
-							<div class="choose__item choose__item--support">
+							<div class="choose__item ">
 								<div class="choose__number">06</div>
-								<div class="choose__item-title">
+								<div class="choose__item-title choose__item-title--support">
 									Fast and Friendly Support
 								</div>
 								<div class="choose__item-text">
@@ -1288,7 +1239,7 @@
 
 						</div>
 
-						<button class="feedback__btn">View All Reviews</button>
+						<a class="feedback__btn">View All Reviews</a>
 					</div>
 				</section>
 
@@ -1317,7 +1268,7 @@
 										the mattis, leo quam aliquet congue.
 									</div>
 									<div class="news__bottom">
-										<span class="news__data">24 Feb 2017</span>
+										<time class="news__data">24 Feb 2017</time>
 										<span class="news__comments">45</span>
 										<span class="news__views">345</span>
 									</div>
@@ -1336,7 +1287,7 @@
 										the mattis, leo quam aliquet congue.
 									</div>
 									<div class="news__bottom">
-										<span class="news__data">24 Feb 2017</span>
+										<time class="news__data">24 Feb 2017</time>
 										<span class="news__comments">45</span>
 										<span class="news__views">345</span>
 									</div>
@@ -1355,7 +1306,7 @@
 										the mattis, leo quam aliquet congue.
 									</div>
 									<div class="news__bottom">
-										<span class="news__data">24 Feb 2017</span>
+										<time class="news__data">24 Feb 2017</time>
 										<span class="news__comments">45</span>
 										<span class="news__views">345</span>
 									</div>
@@ -1418,10 +1369,10 @@
 						</div>
 						<a href="tel:67898752235" class="footer__phone">Phone: +6789-875-2235</a>
 						<a href="mailto:support@aazztech.com" class="footer__mail">support@aazztech.com</a>
-						<div class="footer__adress">
+						<address class="footer__adress">
 							202 New Hampshire Avenue
 							Northwest #100, New York-2573
-						</div>
+						</address>
 					</div>
 
 					<div class="footer__company">
@@ -1462,12 +1413,16 @@
 						</form>
 						<div class="footer__social social">
 							<ul class="social__list">
-								<li class="social__item"><a href="#" class="social__link social__link--facebook"></a></li>
-								<li class="social__item"><a href="#" class="social__link social__link--twitter"></a></li>
-								<li class="social__item"><a href="#" class="social__link social__link--google"></a></li>
-								<li class="social__item"><a href="#" class="social__link social__link--pinterest"></a></li>
-								<li class="social__item"><a href="#" class="social__link social__link--linkedin"></a></li>
-								<li class="social__item"><a href="#" class="social__link social__link--dribbble"></a></li>
+								<div class="social__row">
+									<li class="social__item"><a href="#" class="social__link social__link--facebook"></a></li>
+									<li class="social__item"><a href="#" class="social__link social__link--twitter"></a></li>
+									<li class="social__item"><a href="#" class="social__link social__link--google"></a></li>
+								</div>
+								<div class="social__row">
+									<li class="social__item"><a href="#" class="social__link social__link--pinterest"></a></li>
+									<li class="social__item"><a href="#" class="social__link social__link--linkedin"></a></li>
+									<li class="social__item"><a href="#" class="social__link social__link--dribbble"></a></li>
+								</div>
 							</ul>
 						</div>
 					</div>

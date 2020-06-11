@@ -1,6 +1,7 @@
+@import 'fonts';
 @import 'vars';
 @import 'global';
-@import 'fonts';
+
 
 /* start main-page */
 
@@ -136,9 +137,22 @@
 
 	&__menu-inner {
 		height: 80px;
+	}
+
+	&__box {
+		height: 80px;
+		width: 100%;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		&--top {
+			display: flex;
+    	align-items: center;
+		}
+	}
+
+	&__burger {
+		display: none;
 	}
 
 	&__item {
@@ -164,6 +178,9 @@
 		color: #333333;
 		text-transform: uppercase;
 		font-family: 'Quicksand-Medium', sans-serif;
+		border: none;
+		background-color: transparent;
+		cursor: pointer;
 		&:hover,
 		&:focus {
 		color: $light-blue;
@@ -200,11 +217,9 @@
 		right: 0;
 		top: 0;
 		transition: all .3s;
-		&:hover,
-		&:focus {
-			right: -1px;
-			top: -1px;
-			padding: 15px 29px;
+		&::before {
+			color: #fff;
+			font-size: 15px;
 		}
 	}
 
@@ -767,7 +782,7 @@
 			width: 190px;
 		}
 
-		&--others {
+		&--other {
 			width: 420px;
 		}
 	}
@@ -816,7 +831,7 @@
 
 	&__text {
 		font-family: 'Quicksand-Medium', sans-serif;
-		margin: 35px 0;
+		margin: 35px 0 60px;
 		font-size: 20px;
 	}
 
@@ -878,7 +893,7 @@
 		background-color: #fff;
 		max-width: 1140px;
 		width: 100%;
-		height: 135px;
+		padding: 40px;
 		border-radius: 6px;
 		box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
 		z-index: 3;
@@ -902,7 +917,7 @@
 		font-size: 12px;
 		position: absolute;
 		right: 19px;
-		top: 23px;
+		top: 20px;
 		color: #898f96;
 		z-index: 20;
 		}
@@ -913,6 +928,7 @@
 		border-bottom-right-radius: 4px;
 		padding: 18px 50px 17px 20px;
 		border: 1px solid #dcdcdc;
+		margin-top: -3px;
 		margin-left: -5px;
 		cursor: pointer;
 		-webkit-appearance: none;
@@ -937,8 +953,7 @@
 		max-width: 615px;
 		height: 55px;
 		width: 100%;
-		padding: 0 225px 0 30px;
-		margin-left: 40px;
+		padding: 0 80px 0 30px;
 	}
 
 	&__btn {
@@ -951,7 +966,7 @@
 		border-radius: 3px;
 		cursor: pointer;
 		text-align: center;
-		margin-left: 30px;
+		margin-left: 40px;
 	}
 }
 
@@ -969,6 +984,9 @@
 	&__title {
 		font-size: 24px;
 		margin: 30px 0 20px;
+		&--middle {
+			margin-top: 25px;
+		}
 	}
 
 	&__item {
@@ -1011,6 +1029,8 @@
 		max-width: 550px;
 		width: 100%;
 		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
 	} 
 
 	&__item {
@@ -1092,6 +1112,8 @@
 		display: inline-block;
 		margin: 0 20px 0 45px;
 		position: relative;
+		border: none;
+		background-color: transparent;
 		&::before {
 			position: absolute;
 			font-size: 15px;
@@ -1107,6 +1129,8 @@
 		padding-left: 25px;
 		color: $light-blue;
 		position: relative;
+		border: none;
+		background-color: transparent;
 		&::before {
 			position: absolute;
 			font-size: 15px;
@@ -1204,6 +1228,8 @@
 		height: 20px;
 		background-repeat: no-repeat;
 		padding: 0 5px;
+		border: none;
+		background-color: transparent;
 	}
 
 	&__triangle {
@@ -1261,6 +1287,7 @@
 		box-shadow: 0px 1px 2px 0px rgba(90, 93, 100, 0.1);
 		padding: 0 30px;
 		display: flex;
+		flex-wrap: wrap;
 		align-items: center;
 	}
 
@@ -1397,6 +1424,8 @@
 		font-size: 15px;
 		margin-left: 31px;
 		position: relative;
+		border: none;
+		background-color: transparent;
 		&:before {
 			font-family: "Linearicons-Free";
 			content: "\e813";
@@ -1413,6 +1442,8 @@
 		color: $light-blue;
 		margin-left: auto;
 		position: relative;
+		border: none;
+		background-color: transparent;
 		&:before {
 			font-family: "Linearicons-Free";
 			content: "\e82e";
@@ -1521,10 +1552,12 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		flex-wrap: wrap;
 	}
 
 	&__item {
 		text-align: center;
+		margin: 0 10px;
 	}
 
 	&__text {
@@ -1609,43 +1642,6 @@
 		border-radius: 4px;
 		box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
 		margin-top: 30px;
-		&::before {
-		font-family: "Linearicons-Free";
-		font-size: 60px;
-		position: absolute;
-		left: 150px;
-    top: 55px;
-		}
-
-		&--payment::before {
-		content: "\e822";
-		color: $light-blue;
-		}
-
-		&--products::before {
-		content: "\e803";
-		color: #7347c1;
-		}
-
-		&--secure::before {
-		content: "\e80f";
-		color: #77de51;
-		}
-
-		&--organized::before {
-		content: "\e843";
-		color: #feb71d;
-		}
-
-		&--free::before {
-		content: "\e849";
-		color: #58c9e9;
-		}
-
-		&--support::before {
-			content: "\e831";
-		color: #ff6a6d;
-		}
 	}
 
 	&__number {
@@ -1658,8 +1654,48 @@
 	}
 
 	&__item-title {
+		display: inline-block;
 		margin: 100px 0 30px;
 		font-size: 24px;
+		position: relative;
+		&::before {
+		font-family: "Linearicons-Free";
+		font-size: 60px;
+		position: absolute;
+		left: 99px;
+    top: -99px;
+		}
+		&--payment::before {
+			content: "\e822";
+			color: $light-blue;
+			left: 73px;
+			}
+	
+			&--products::before {
+			content: "\e803";
+			color: #7347c1;
+			left: 59px;
+			}
+	
+			&--secure::before {
+			content: "\e80f";
+			color: #77de51;
+			}
+	
+			&--organized::before {
+			content: "\e843";
+			color: #feb71d;
+			}
+	
+			&--free::before {
+			content: "\e849";
+			color: #58c9e9;
+			}
+	
+			&--support::before {
+				content: "\e831";
+			color: #ff6a6d;
+			}
 	}
 
 	&__item-text {
@@ -1677,8 +1713,8 @@
 	&__inner {
 		max-width: 580px;
 		height: 560px;
-		padding-top: 100px;
-		
+		padding: 100px 10px 0;
+	
 	}
 
 	&__sell,
@@ -1813,7 +1849,7 @@
 	}
 
 	&__btn {
-		display: block;
+		display: inline-block;
 		font-size: 16px;
 		margin: 60px auto 0;
 		outline: none;
@@ -1825,6 +1861,7 @@
 		cursor: pointer;
 		border: 1px solid $light-blue;
 		transition: all .3s;
+		margin-top: 36px;
 		&:hover,
 		&:focus {
 		background-color: $light-blue;
@@ -1945,21 +1982,22 @@
 	&__text {
 		font-size: 24px;
 		padding-top: 155px;
-		position: relative;
 		&--blue {
 		color: $light-blue;
+		position: relative;
 		&::after {
 		content: '';
 		position: absolute;
 		width: 150px;
 		height: 120px;
 		background-image: url(../images/facts-icon-1.png);
-		top: 0px;
-    right: 220px;
+		top: -141px;
+    left: -122px;
 		}
 		}
 		&--violent {
 		color: #7347c1;
+		position: relative;
 		&::after {
 		content: '';
 		position: absolute;
@@ -1967,8 +2005,8 @@
 		height: 120px;
 		background-image: url(../images/facts-icon-2.png);
 		background-repeat: no-repeat;
-		top: 0px;
-    right: 215px;
+		top: -141px;
+    left: -122px;
 		}
 		}
 	}
@@ -2032,8 +2070,8 @@
 	&__inner {
 		display: flex;
 		justify-content: space-between;
+		flex-wrap: wrap;
 		margin-bottom: 110px;
-		height: 300px;
 	}
 
 	&__title {
@@ -2054,7 +2092,7 @@
 			margin-top: -5px;
 		}
 	}
-
+	
 	&__phone {
 		display: inline-block;
 		color: #999999;
@@ -2174,6 +2212,14 @@
 
 .social {
 	margin-top: 49px;
+
+	&__row {
+		display: inline-block;
+		& + & {
+			margin-left: 14px;
+		}
+	}
+
 	&__list {
 		padding: 0;
 	}
@@ -2370,3 +2416,7 @@
 }
 
 /* end category-page */
+
+
+
+@import 'media';
